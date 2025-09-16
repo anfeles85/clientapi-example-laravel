@@ -79,7 +79,7 @@ class TypeActivityController extends Controller
         elseif($response->status() == Response::HTTP_BAD_REQUEST)
         {
             $errors = $response->json()['errors'];
-            return redirect()->route('observation.index')->withInput()->withErrors($errors);
+            return redirect()->route('type_activity.index')->withInput()->withErrors($errors);
         }
         else
         {
